@@ -22,7 +22,7 @@ force_ssl: [rewrite_on: [:x_forwarded_proto]],
 config :logger, level: :info
 
 # Configure your database
-config :openfn_in, OpenfnIx.Repo,
+config :openfn_ix, OpenfnIx.Repo,
   adapter: Ecto.Adapters.Postgres,
   url: System.get_env("DATABASE_URL"),
   pool_size: 20
