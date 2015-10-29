@@ -40,3 +40,9 @@ config :openfn_ix, OpenfnIx.Repo,
   database: "openfn_ix_dev",
   hostname: "localhost",
   pool_size: 10
+
+# Configure joken
+config :joken,
+  # Environment specific secret key for signing tokens.
+  # This should be a very long random string.
+  secret_key: "very secret test key",

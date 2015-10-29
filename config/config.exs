@@ -27,3 +27,20 @@ import_config "#{Mix.env}.exs"
 config :phoenix, :generators,
   migration: true,
   binary_id: false
+
+# Configure phoenix_token_auth
+config :phoenix_token_auth,
+  user_model: OpenfnIx.User,                                                              # ecto model used for authentication
+  repo: OpenfnIx.Repo,                                                                    # ecto repo
+  crypto_provider: Comeonin.Bcrypt,                                                    # crypto provider for hashing passwords/tokens. see http://hexdocs.pm/comeonin/
+  token_validity_in_minutes: 7 * 24 * 60,                                              # minutes from login until a token expires
+  email_sender: "myapp@example.com",                                                   # sender address of emails sent by the app
+  emailing_module: OpenfnIx.EmailConstructor,                                             # module implementing the `PhoenixTokenAuth.MailingBehaviour` for generating emails
+  mailgun_domain: "example.com",                                                       # domain of your mailgun account
+  mailgun_key: "secret",                                                               # secret key of your mailgun account
+  user_model_validator: {OpenfnIx.Model, :user_validator} 
+
+  # Configure joken
+  config :joken,
+  json_module: PhoenixTokenAuth.PoisonHelper,
+  algorithm: :HS256 # Optional. defaults to :HS256
