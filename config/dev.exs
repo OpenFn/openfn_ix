@@ -45,4 +45,4 @@ config :openfn_ix, OpenfnIx.Repo,
 config :joken,
   # Environment specific secret key for signing tokens.
   # This should be a very long random string.
-  secret_key: "very secret test key",
+  secret_key: "very secret test key"
