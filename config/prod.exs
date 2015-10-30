@@ -27,6 +27,12 @@ config :openfn_ix, OpenfnIx.Repo,
   url: System.get_env("DATABASE_URL"),
   pool_size: 20
 
+# Configure joken
+config :joken,
+  # Environment specific secret key for signing tokens.
+  # This should be a very long random string.
+  secret_key: "very secret test key"
+
 # ## SSL Support
 #
 # To get SSL working, you will need to add the `https` key
