@@ -20,15 +20,15 @@ import "deps/phoenix_html/web/static/js/phoenix_html"
 
 // import socket from "./socket"
 
-import React from "react";
+// import React from "react";
 
-let HelloWorld = React.createClass({
-  render: function() {
-    return (<h2>Our engineers are hard at work on OpenFn v2! Email admin@openfn.org to start contributing, or head back to www.openfn.org.</h2>);
-  }
-})
+// let HelloWorld = React.createClass({
+//   render: function() {
+//     return (<h2>Our engineers are hard at work on OpenFn v2! Email admin@openfn.org to start contributing, or head back to www.openfn.org.</h2>);
+//   }
+// })
 
-React.render(
-  <HelloWorld />,
-  document.getElementsByClassName('container')[0]
-);
+// React.render(
+//   <HelloWorld />,
+//   document.getElementsByClassName('container')[0]
+// );

@@ -1,35 +1,17 @@
 <div class="jumbotron">
-  <h2>OpenPhoenix</h2>
-  <p class="lead">We're rebuilding this whole thang.</p>
+  <h2>Open Function</h2>
+  <p class="lead">Welcome to Open Function's UTP. We're harnessing the simple elegance of LISP, the scalability of Erlang, and the speed of Phoenix to rebuild OpenFn from the ground up.</p>
 </div>
 
 <div class="row marketing">
   <div class="col-lg-6">
-    <h4>Resources</h4>
+    <h4>What's happening here?</h4>
     <ul>
       <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
+        We aim to integrate the 20 most important development-sector technologies in the next 6 months, with entirely re-usable, clicks-not-code setup.
       </li>
       <li>
-        <a href="http://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
+        New technologies will be added with "language-packs" that let a non-technical user (a field-project coordinator at a small NGO) define jobs that can automatically process data, keeping information flowing between health record systems, GPS mapping tools, SMS gateways, survey data capture apps, and more.
       </li>
     </ul>
   </div>
