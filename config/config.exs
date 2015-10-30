@@ -37,8 +37,8 @@ config :phoenix_token_auth,
   email_sender: "myapp@example.com",                                                   # sender address of emails sent by the app
   emailing_module: OpenfnIx.EmailConstructor,                                             # module implementing the `PhoenixTokenAuth.MailingBehaviour` for generating emails
   mailgun_domain: "example.com",                                                       # domain of your mailgun account
-  mailgun_key: "secret",                                                               # secret key of your mailgun account
-  user_model_validator: {OpenfnIx.Model, :user_validator} 
+  mailgun_key: "secret"                                                               # secret key of your mailgun account
+  # user_model_validator: {OpenfnIx.User, :user_validator} 
 
   # Configure joken
   config :joken,
