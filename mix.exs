@@ -34,6 +34,7 @@ defmodule OpenfnIx.Mixfile do
      {:phoenix_ecto, "~> 1.1"},
      {:postgrex, ">= 0.0.0"},
      {:comeonin, "~> 1.3", override: true},
+     {:timex, "1.0.0-rc1", override: true},
      {:phoenix_token_auth, "~> 0.3.0"},
      # use github mailgun repo for phoenix token auth to have testing mode
      {:phoenix_html, "~> 2.1"},
