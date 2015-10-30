@@ -24,7 +24,7 @@ import React from "react";
 
 let HelloWorld = React.createClass({
   render: function() {
-    return (<h1>React on phoenix is working!</h1>);
+    return (<h2>Our engineers are hard at work on OpenFn v2! Email admin@openfn.org to start contributing, or head back to www.openfn.org.</h2>);
   }
 })
 
