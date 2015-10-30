@@ -27,6 +27,18 @@ config :openfn_ix, OpenfnIx.Repo,
   url: System.get_env("DATABASE_URL"),
   pool_size: 20
 
+# Configure phoenix_token_auth
+config :phoenix_token_auth,
+  user_model: OpenfnIx.User,          # ecto model used for authentication
+  repo: OpenfnIx.Repo,                # ecto repo
+  crypto_provider: Comeonin.Bcrypt,           # crypto provider for hashing passwords/tokens. see http://hexdocs.pm/comeonin/
+  token_validity_in_minutes: 7 * 24 * 60,     # minutes from login until a token expires
+  email_sender: "support@openfn.org",           # sender address of emails sent by the app
+  emailing_module: PhoenixTokenAuth.Mailer,  # module implementing the `PhoenixTokenAuth.MailingBehaviour` for generating emails
+  mailgun_domain: System.get_env("MAILGUN_DOMAIN"),       # domain of your mailgun account
+  mailgun_key: System.get_env("MAILGUN_API_KEY")    # secret key of your mailgun account
+  # user_model_validator: {OpenfnIx.User, :user_validator}
+
 # Configure joken
 config :joken,
   # Environment specific secret key for signing tokens.
