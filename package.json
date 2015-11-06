@@ -7,6 +7,7 @@
     "css-brunch": ">= 1.0 < 1.8",
     "javascript-brunch": ">= 1.0 < 1.8",
     "react": "^0.14.1",
+    "redux": "^3.0.4",
     "uglify-js-brunch": ">= 1.0 < 1.8"
   },
   "overrides": {
