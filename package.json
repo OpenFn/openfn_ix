@@ -7,6 +7,7 @@
     "css-brunch": ">= 1.0 < 1.8",
     "javascript-brunch": ">= 1.0 < 1.8",
     "react": "^0.14.1",
+    "react-redux": "^4.0.0",
     "redux": "^3.0.4",
     "uglify-js-brunch": ">= 1.0 < 1.8"
   },
@@ -14,5 +15,8 @@
     "react": {
       "main": "dist/react.js"
     }
+  },
+  "devDependencies": {
+    "redux-devtools": "^2.1.5"
   }
 }
