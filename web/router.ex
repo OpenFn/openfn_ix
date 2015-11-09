@@ -37,7 +37,7 @@ defmodule OpenfnIx.Router do
     get   "account",               PhoenixTokenAuth.Controllers.Account, :show
     put   "account",               PhoenixTokenAuth.Controllers.Account, :update
 
-    post "inbox/:id",              OpenfnIx.InboxController, :receive # This must be an authenticated request
+    post "inbox/:id",              OpenfnIx.InboxController, :receive
   end
 
   scope "/api" do
@@ -45,6 +45,8 @@ defmodule OpenfnIx.Router do
     pipe_through :api
 
     resources "/messages", MessagesController
+
+    get "authtest/", OpenfnIx.AuthTestController, :pulse
   end
 
   # Other scopes may use custom stacks.
