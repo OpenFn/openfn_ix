@@ -17,3 +17,8 @@ config :openfn_ix, OpenfnIx.Repo,
   database: "openfn_ix_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+# Configure phoenix_token_auth
+config :phoenix_token_auth,
+  mailgun_mode: :test,
+  mailgun_test_file_path: "/tmp/openfnix_mail"

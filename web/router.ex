@@ -36,6 +36,8 @@ defmodule OpenfnIx.Router do
     post  "password_resets/reset", PhoenixTokenAuth.Controllers.PasswordResets, :reset
     get   "account",               PhoenixTokenAuth.Controllers.Account, :show
     put   "account",               PhoenixTokenAuth.Controllers.Account, :update
+
+    post "inbox/:id",              OpenfnIx.InboxController, :receive # This must be an authenticated request
   end
 
   scope "/api" do
